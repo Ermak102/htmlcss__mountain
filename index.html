@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <title>Parallax scrolling</title>
+
+    <script src='libs/gsap.min.js' defer></script>
+    <script src='libs/ScrollSmoother.min.js' defer></script>
+    <script src='libs/ScrollTrigger.min.js' defer></script>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    
+    <script src='source/index.js' defer></script>
+    <script src='source/intersecting.js' defer></script>
+</head>
+<body>
+
+
+    <div class="wrapper">
+        <div class="content">
+
+            <header class="header">
+                <div class="header__layers">
+        
+                    <div class="layer header__content">
+                        <div class="header__title">Mountain</div>
+                        <div class="header__capture">parallax</div>
+                    </div>
+                    <div class="layer layer-mountain__back" style="background-image: url(imgs/monutain_01.png);"></div>
+                    <div class="layer layer-trees__left" style="background-image: url(imgs/trees_02.png);"></div>
+                    <div class="layer layer-mountain__front" style="background-image: url(imgs/monutain_02.png);"></div>
+                    <div class="layer" style="background-image: url(imgs/trees_01.png);"></div>
+                    <div class="layer layer-man" style="background-image: url(imgs/man.png);"></div>
+                    <div class="layer" style="background-image: url(imgs/plants.png);"></div>
+                </div>
+        
+            </header>
+        
+            <main class="main">
+                <div class="main__container">
+                    <div class="main__content">
+                        <div class="main__header">
+                            <h1 class="main__title animation">Lorem ipsum dolor sit amet</h1>
+                            <div class="main__subtitle animation">Lorem ipsum</div>
+                        </div>
+
+                        <div class="main__pictures">
+                            <div class="picture">
+                                <img class="animation picture-left" src="https://source.unsplash.com/random/200x200?sig=1" alt="">
+                            </div>
+                            <div class="picture">
+                                <img class="animation picture-center" src="https://source.unsplash.com/random/200x200?sig=1" alt="">
+                            </div>
+                            <div class="picture">
+                                <img class="animation picture-right" src="https://source.unsplash.com/random/200x200?sig=1" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+</body>
+</html>

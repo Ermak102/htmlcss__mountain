@@ -1,0 +1,87 @@
+.header{
+    position: relative;
+}
+
+.header::after{
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+
+    width: 105%;
+    height: calc(var(--size) * 12);
+
+    background-image: url('../imgs/leaves.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    filter: brightness(0.4);
+    box-shadow: -10px 10px 9px -2px #394e12;
+
+
+.header__layers{
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.header__content{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #ebeb54;
+    text-shadow: 0px 0px 6px #ffff00;
+    text-transform: uppercase;
+    margin-left: calc(var(--size) * 2);
+
+    will-change: transform;
+    transition: var(--transition);
+    transform: translate3d(calc(var(--scrollTop) * 1.1), 0, 0);
+}
+
+.header__title{
+    font-size: calc(var(--size) * 2.5);
+    font-weight: 900;
+}
+
+.header__capture{
+    font-size: calc(var(--size) * 1.1);
+    color: #000;
+    opacity: .6;
+}
+
+.layer{
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    will-change: transform;
+    transition: var(--transition);
+}
+
+.layer-mountain__back{
+    transform: translate3d(calc(var(--scrollTop) / 8), 0, 0);
+}
+
+.layer-mountain__front{
+    transform: translate3d(calc(var(--scrollTop) / 10), 0, 0);
+}
+
+.layer-man{
+    transform: translate3d(calc(var(--scrollTop) / -8), calc(var(--scrollTop) / 10), 0);
+}
+
+.layer-trees__left{
+    transform: translate3d(calc(var(--scrollTop) / -8), 0, 0);
+}
